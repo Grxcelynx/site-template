@@ -1,0 +1,170 @@
+.entry-content {
+	margin: 0;
+}
+
+.entry-title {
+	display: none;
+}
+
+ul {
+	margin: 0%;
+	padding: 0%;
+}
+
+.wp-block-columns {
+	margin-bottom: 0%;
+}
+
+.site-header {	
+	height: 90px;
+	width: 100%;
+
+	position: sticky;
+	top: 0;
+	z-index: 99999;
+	letter-spacing: 2px;
+	text-align: center;
+
+	.site-branding {
+		
+
+			float: left;
+			margin: 0px 15px;
+			height:auto;
+			width:220px;
+			color: #091540;
+
+			h3{
+				font-size: 24px;
+				margin: 20px auto 10px auto;
+			}
+
+			h6 {
+				margin: 1% auto 0% auto;
+			}
+
+		a {
+			text-decoration: none;
+			img {
+				padding: 3%;
+				height:50px;
+				width:40px;
+				margin: 0%;
+			}
+		}
+	}
+}
+.main-navigation {
+	display: block;
+	width: 100%;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		float: right;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+
+				&:hover > ul,
+				&.focus > ul {
+					display: block;
+					left: auto;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		padding:20px;
+	}
+
+	a:active{
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	.nav-previous {
+		flex: 1 0 50%;
+	}
+
+	.nav-next {
+		text-align: end;
+		flex: 1 0 50%;
+	}
+}
