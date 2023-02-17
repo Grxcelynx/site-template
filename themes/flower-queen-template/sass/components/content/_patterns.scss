@@ -1,0 +1,31 @@
+.wp-block-columns{
+    .img-txt-container {
+        .wp-block-media-text{
+            padding: 0px 120px;
+            .wp-block-media-text__media{
+
+            }
+
+            .wp-block-media-text__content{
+
+                .spacer-colored {
+                    // background-color: $darkpink;
+                    background: linear-gradient(to left, $darkpink, $orange, $lightpink, transparent);
+                }
+            }
+        }
+    }
+}
+
+.text-snip-container {
+    padding: 0px 120px;
+
+}
+
+.footer-block{
+    padding: 0px 40px;
+}
+
+.columns-cards, .blurbs, .market, .two-img{
+    padding: 0px 120px;
+}
